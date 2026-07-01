@@ -178,7 +178,25 @@ text-align:center;
 }
 
 </style>
+.galeri{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
 
+.galeri img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:.4s;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.galeri img:hover{
+transform:scale(1.05);
+}
 </head>
 
 <body>
@@ -233,7 +251,25 @@ beriman dan bertaqwa.
 <div class="card">
 
 <h2>Sambutan Kepala Sekolah</h2>
+<section class="container">
 
+<div class="card">
+
+<h2>Galeri Sekolah</h2>
+
+<div class="galeri">
+
+<img src="foto1.jpg" alt="">
+<img src="foto2.jpg" alt="">
+<img src="foto3.jpg" alt="">
+<img src="foto4.jpg" alt="">
+<img src="foto5.jpg" alt="">
+
+</div>
+
+</div>
+
+</section>
 <div class="kepsek">
 
 <img src="kepsek.jpg">
